@@ -7,6 +7,8 @@ import string
 import random
 for i in range(1, 12):
     PasswordLet.extend(random.choice(string.ascii_letters))
-    PasswordNum.append(random.randint(1,9))
+    PasswordLet.insert(random.randint(0, len(PasswordLet)) ,random.randint(1,9))
 print(PasswordLet)
-print(PasswordNum)
+
+
+
